@@ -1,0 +1,65 @@
+Stack(
+            children: [
+              SingleChildScrollView(
+                physics: BouncingScrollPhysics(),
+                child: Column(children: [
+                  native.getNT('/Get_Stard', 'listTileMedium'),
+                  SizedBox(height: ScreenSize.pSize_50()),
+                  controllerelevated.getelevated(() {
+                    Get.to(() => Apply_for_loan_Screen());
+                    controller.showbuttonad(context, '/Apply_for_loan_Screen',
+                        '/Get_Stard', transition,
+                        indexs: index, loanlist: Loan_List);
+                  }, 'Get Started'),
+                  SizedBox(height: ScreenSize.pSize_40()),
+                  controllerelevated.getelevated(() {
+                    Get.to(() => Loan_Work(),transition: transition);
+                    // controller.showbuttonad(
+                    //     context, '/Loan_Work', '/Get_Stard', transition,
+                    //     indexs: index, loanlist: Loan_List);
+                  }, 'How Loan Works?'),
+                  SizedBox(height: ScreenSize.horizontalBlockSize!*19),
+                  Padding(
+                    padding: const EdgeInsets.all(4),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        controllercircle.getcircle(context, () {
+                          Share.share('https://www.google.com/');
+                        }, 'Share',
+                            'asset/image/loan/Icons/share-icon (1).png'),
+                        controllercircle.getcircle(context, _shareURL,
+                            'Rate', 'asset/image/loan/Icons/rate-icon.png'),
+                        controllercircle.getcircle(context, () {
+                          // Get.to(() => In_App_Browser());
+                          controller.showbuttonad(context,
+                              '/In_App_Browser', '/Get_Stard', transition,
+                              indexs: index, loanlist: Loan_List);
+                        }, 'Privacy',
+                            'asset/image/loan/Icons/privacy-icon (1).png'),
+                      ],
+                    ),
+                  ),
+
+                ]),
+              ),
+              Positioned(
+                left: ScreenSize.horizontalBlockSize! * 35,
+                bottom: ScreenSize.horizontalBlockSize! * 0,
+                child: controllerround.getcircle(context),
+              ),
+              Positioned(
+                left: ScreenSize.horizontalBlockSize! *7.3,
+                bottom: ScreenSize.horizontalBlockSize! * 0,
+
+                child: controllerround.getcircle(context),
+              ),
+              Positioned(
+                right: ScreenSize.horizontalBlockSize! * 35,
+                bottom: ScreenSize.horizontalBlockSize! * 0,
+                child: controllerround.getcircle(context),
+              ),
+
+              banner.getBN('/Get_Stard'),
+            ],
+          )

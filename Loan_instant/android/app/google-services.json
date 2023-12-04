@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "48608419699",
+    "project_id": "instant-ec0af",
+    "storage_bucket": "instant-ec0af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48608419699:android:5bc4be6fd0c744eabf2f06",
+        "android_client_info": {
+          "package_name": "com.example.loan_instant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "48608419699-4999dtidt0mfbodst2ddf62rgvifkirj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBthGJK40dCY8g4Y2dVhUzo4KLqLNfE6Rg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "48608419699-4999dtidt0mfbodst2ddf62rgvifkirj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
